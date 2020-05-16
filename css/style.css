@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    padding-top: 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #001858;
+}
+
+.container .todo-input-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 564px;
+    width: 100%;
+}
+
+.container .todo-input-area input {
+    max-width: 400px;
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container .todo-input-area button {
+    max-width: 150px;
+    width: 100%;
+    height: 40px;
+    background: #2aa59f;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 1rem;
+    border: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.container .todo-input-area button:hover,
+.container .todo-input-area button:focus {
+    background: #238b85;
+}
+
+.container .todo-table {
+    margin-top: 2rem;
+    max-width: 564px;
+    width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container .todo-table .todos {
+    list-style: none;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.container .todo-table .todos li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #e6e5e5;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.container .todo-table .todos li:last-child {
+    margin-bottom: 0;
+}
+
+.container .todo-table .todos li.completed {
+    background: rgba(230, 229, 229, 0.4);
+}
+
+.container .todo-table .todos li.completed p {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.container .todo-table .todos li p {
+    padding-left: 1rem;
+}
+
+.container .todo-table .todos li i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background: #ef4565;
+    color: #fff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+
+.container .todo-table .todos li i:hover,
+.container .todo-table .todos li i:focus {
+    background: #d43351;
+}
+
+.container .todo-table .todos li i .fa-times {
+    pointer-events: none;
+}
+
+@media (max-width: 500px) {
+    .container .todo-input-area {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .container .todo-input-area input {
+        max-width: 564px;
+    }
+    .container .todo-input-area button {
+        max-width: 564px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+/*# sourceMappingURL=style.css.map */
