@@ -1,2 +1,2 @@
 # todo-app
-Basic todo-app
+JavaScript Todo app with local storage.
